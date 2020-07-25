@@ -18,7 +18,7 @@ This is Microsoft Teams App for [the Hub](https://github.com/mrahmadt/The-Hub)
 
 ## Azure Active Directory SSO
 
-**From: https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso#develop-an-sso-microsoft-teams-tab**
+*From: https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso#develop-an-sso-microsoft-teams-tab*
 
 - Go to The Hub application in the (Azure Active Directory – App Registrations portal)[https://go.microsoft.com/fwlink/?linkid=2083908].
 - On the overview page, copy and save the Application (client) ID. You’ll need it later.
@@ -30,7 +30,7 @@ This is Microsoft Teams App for [the Hub](https://github.com/mrahmadt/The-Hub)
 ex: `api://my.example.com/00000000-0000-0000-0000-000000000000.`
 
 - Select the Add a scope button. In the panel that opens, enter `access_as_user` as the Scope name.
-- Set *Who can consent?* to `Admins and users`
+- Set **Who can consent?** to `Admins and users`
 - Fill in the fields for configuring the admin and user consent prompts with values that are appropriate for the access_as_user scope:
 
     Admin consent title: Teams can access the user’s profile.
@@ -38,52 +38,55 @@ ex: `api://my.example.com/00000000-0000-0000-0000-000000000000.`
     User consent title: Teams can access the user profile and make requests on the user's behalf.
     User consent description: Enable Teams to call this app’s APIs with the same rights as the user.
 
-- Ensure that *State* is set to *Enabled*
-- Select *Add scope*
+- Ensure that **State** is set to **Enabled**
+- Select **Add scope**
     The domain part of the Scope name displayed just below the text field should automatically match the Application ID URI set in the previous step, with /access_as_user appended to the end:
     
     `api://my.example.com/00000000-0000-0000-0000-000000000000/access_as_user`
 
-- In the Authorized client applications section, identify the applications that you want to authorize for your app’s web application. Each of the following IDs needs to be entered:
+- In the Authorized client applications section, identify the applications that you want to authorize for your app’s web application. Each of the following IDs **needs to be entered**:
 
     `1fec8e78-bce4-4aaf-ab1b-5451cc387264` (Teams mobile/desktop application)
     `5e3ce6c0-2b1f-4285-8d4b-75ee78787346` (Teams web application)
 
 
-
-
 ## Download The Hub Teams App
 
-https://github.com/mrahmadt/TheHub-MSTeams-App/archive/master.zip
+- Download https://github.com/mrahmadt/TheHub-MSTeams-App/archive/master.zip
+
+- Unzip master.zip 
 
 
 ## Update your Microsoft Teams application manifest (file mainifest.json)
 
+*From: https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso*
 
 
+- (Optional) Change the app name 
 
-https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso
+    ``
+    "name": {
+        "short": "The Hub",
+        "full": "Your company App Store"
+    }
 
-    "version": "1.0.0",
 
-        "name": "The Hub",
+- (Optional) Enter your Website URL
+
         "websiteUrl": "https://my.abdc.com.sa/",
         "privacyUrl": "https://my.abdc.com.sa/",
         "termsOfUseUrl": "https://my.abdc.com.sa/"
 
+- (Optional) Enter app description
 
-            "name": {
-        "short": "The Hub",
-        "full": "Your company App Store"
-    },
     "description": {
         "short": "The Hub",
         "full": "Your company App Store"
-    },
+    }
 
 
-                "contentUrl": "https://my.abdc.com.sa/teams/myapps",
-            "websiteUrl": "https://my.abdc.com.sa/",
+`"contentUrl": "https://my.abdc.com.sa/teams/myapps",`
+`"websiteUrl": "https://my.abdc.com.sa/",`
 
 
     "validDomains": [
