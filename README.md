@@ -59,7 +59,7 @@ ex: `api://my.example.com/00000000-0000-0000-0000-000000000000.`
 
 ## Update your Microsoft Teams application manifest (file mainifest.json)
 
-*From: https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso*
+*From: https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso and https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/apps-package*
 
 
 - (Optional) Change the app name 
@@ -90,19 +90,24 @@ ex: `api://my.example.com/00000000-0000-0000-0000-000000000000.`
 - Enter your domain name in `validDomains`
 
         "validDomains": [
-
                 "my.example.com"
-        
         ],
 
 - Enter your **Application ID** in the **id** element below and change **resource** element to your API ([**Check Azure Active Directory SSO**](https://github.com/mrahmadt/TheHub-MSTeams-App#azure-active-directory-sso))
 
 
         "webApplicationInfo": {
-
                 "id": "53cda29e-7798-494b-8cf0-b0b4b50ca52d",
-
                 "resource": "api://my.abdc.com.sa/53cda29e-7798-494b-8cf0-b0b4b50ca52d"
-
         }
 
+
+- Zip the files (*.json and *.png) and name the zip file "TheHub.zip"
+
+- Upload the app to your Microsoft Team (https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload#upload-your-package-into-a-team-or-conversation-using-the-store)
+
+- Test your new Teams App
+
+- Once your are happy with the result, you can go now and upload the app to all your users (https://docs.microsoft.com/en-us/microsoftteams/manage-apps#upload-a-new-app)
+
+- (Optional) You can now install the app to all your users (https://docs.microsoft.com/en-us/microsoftteams/teams-app-setup-policies)
