@@ -7,7 +7,7 @@ This is Microsoft Teams App for [the Hub](https://github.com/mrahmadt/The-Hub)
 
 ## Prerequisites
 
-- You must have The Hub hosted with your own domain, below steps will not work if you are using *.azurewebsites.net
+- You must have The Hub hosted in your own domain, below steps will not work if you are using *.azurewebsites.net
 - Your domain must be accessible via https (http is NOT supported)
  
 
