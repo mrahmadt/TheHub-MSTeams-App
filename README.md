@@ -64,42 +64,45 @@ ex: `api://my.example.com/00000000-0000-0000-0000-000000000000.`
 
 - (Optional) Change the app name 
 
-
+`
     "name": {
         "short": "The Hub",
         "full": "Your company App Store"
     },
-
+`
 
 - (Optional) Enter your Website URL
-
+`
         "websiteUrl": "https://my.example.com/",
         "privacyUrl": "https://my.example.com/",
         "termsOfUseUrl": "https://my.example.com/"
-
+`
 - (Optional) Enter app description
-
+`
     "description": {
         "short": "The Hub",
         "full": "Your company App Store"
     },
-
+`
 
 - Change below lines with your domain
-
+`
     "contentUrl": "https://my.example.com/teams/myapps",
     "websiteUrl": "https://my.example.com/",
+`
 
 - Enter your domain name in `validDomains`
-
+`
     "validDomains": [
         "my.example.com"
     ],
+`
 
 - Enter your **Application ID** in the **id** element below and change **resource** element to your API (**Check Azure Active Directory SSO**)[https://github.com/mrahmadt/TheHub-MSTeams-App#azure-active-directory-sso]
-
+`
     "webApplicationInfo": {
         "id": "53cda29e-7798-494b-8cf0-b0b4b50ca52d",
         "resource": "api://my.abdc.com.sa/53cda29e-7798-494b-8cf0-b0b4b50ca52d"
     }
+`
 
