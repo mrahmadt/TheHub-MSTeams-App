@@ -33,13 +33,13 @@ ex: `api://my.example.com/00000000-0000-0000-0000-000000000000`
 - Set **Who can consent?** to `Admins and users`
 - Fill in the fields for configuring the admin and user consent prompts with values that are appropriate for the access_as_user scope:
 
-    Admin consent title: Teams can access the user’s profile.
+    **Admin consent title:** Teams can access the user’s profile.
 
-    Admin consent description: Allows Teams to call the app’s web APIs as the current user.
+    **Admin consent description:** Allows Teams to call the app’s web APIs as the current user.
 
-    User consent title: Teams can access the user profile and make requests on the user's behalf.
+    **User consent title:** Teams can access the user profile and make requests on the user's behalf.
 
-    User consent description: Enable Teams to call this app’s APIs with the same rights as the user.
+    **User consent description:** Enable Teams to call this app’s APIs with the same rights as the user.
 
 
 - Ensure that **State** is set to **Enabled**
